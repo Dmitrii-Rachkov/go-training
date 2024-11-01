@@ -2,7 +2,7 @@ package shape_final
 
 // ShapeDrawer - интерфейс для рисования фигур
 type ShapeDrawer interface {
-	DrawShape(shape Shape) string
+	DrawShape() string
 }
 
 //// ConsoleDrawer - структура для рисования фигур в консоль
