@@ -5,4 +5,5 @@ type Shape interface {
 	Area() float64
 	Color() string
 	SetColor(color string)
+	// GetData - возвращает стороны и другие параметры
 }

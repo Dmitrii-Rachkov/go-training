@@ -1,7 +1,5 @@
 package shape_final
 
-import "fmt"
-
 // Square - структура квадрата со стороной и цветом
 type Square struct {
 	side  float64
@@ -36,14 +34,4 @@ func (s *Square) Side() float64 {
 // SetSide - метод для установки стороны квадрата
 func (s *Square) SetSide(side float64) {
 	s.side = side
-}
-
-// DrawShape - метод для рисования квадрата в консоль
-func (s *Square) DrawShape() string {
-	return fmt.Sprintf("Square of side: %.2f, color: %s", s.Side(), s.Color())
-}
-
-// Paint - метод для раскрашивания квадрата
-func (s *Square) Paint(color string) {
-	s.SetColor(color)
 }

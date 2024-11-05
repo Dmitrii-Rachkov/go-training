@@ -1,7 +1,5 @@
 package shape_final
 
-import "fmt"
-
 // Triangle - структура треугольника с основаниями и цветом
 type Triangle struct {
 	base   float64
@@ -47,14 +45,4 @@ func (t *Triangle) Height() float64 {
 // SetHeight - метод для установки высоты треугольника
 func (t *Triangle) SetHeight(height float64) {
 	t.height = height
-}
-
-// DrawShape - метод для рисования треугольника в консоль
-func (t *Triangle) DrawShape() string {
-	return fmt.Sprintf("Triangle with base: %.2f, height: %.2f, color: %s", t.Base(), t.Height(), t.Color())
-}
-
-// Paint - метод для раскрашивания треугольника
-func (t *Triangle) Paint(color string) {
-	t.SetColor(color)
 }

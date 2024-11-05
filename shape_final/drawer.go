@@ -2,13 +2,14 @@ package shape_final
 
 // ShapeDrawer - интерфейс для рисования фигур
 type ShapeDrawer interface {
-	DrawShape() string
+	DrawShape(shape Shape) string
 }
 
 //// ConsoleDrawer - структура для рисования фигур в консоль
 //type ConsoleDrawer struct{}
-
+//
 //// DrawShape - метод для рисования фигур в консоль
+//// Это нужно разбить по разным структурам для каждой структуры
 //func (cd *ConsoleDrawer) DrawShape(shape Shape) string {
 //	switch s := shape.(type) {
 //	case *Circle:

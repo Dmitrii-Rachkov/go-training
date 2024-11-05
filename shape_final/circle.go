@@ -1,7 +1,5 @@
 package shape_final
 
-import "fmt"
-
 // Circle - структура круга с радиусом и цветом
 type Circle struct {
 	radius float64
@@ -36,14 +34,4 @@ func (c *Circle) Color() string {
 // SetColor - метод для установки цвета круга
 func (c *Circle) SetColor(color string) {
 	c.color = color
-}
-
-// DrawShape - метод для рисования круга в консоль
-func (c *Circle) DrawShape() string {
-	return fmt.Sprintf("Circle of radius: %.2f, color: %s", c.Radius(), c.Color())
-}
-
-// Paint - метод для раскрашивания круга
-func (c *Circle) Paint(color string) {
-	c.SetColor(color)
 }
